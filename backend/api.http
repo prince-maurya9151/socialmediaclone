@@ -1,0 +1,77 @@
+POST http://localhost:9090/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Prince Maurya",
+  "email": "prince@example.com",
+  "password": "123456",
+  "name": "prince123"
+
+  
+}
+###
+
+   POST http://localhost:9090/login HTTP/1.1
+   Content-Type: application/json
+  
+   {
+    "email":,
+  "password":"a"
+   }
+
+   ###
+
+   POST http://localhost:9090/login HTTP/1.1
+   Content-Type: application/json
+  
+   {
+    "email": "prince@example.com",
+  "password": "123456"
+   }
+
+###
+
+
+POST http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+
+{
+  "token": "b5579af5a3062385379b7307f8d1540db3ead24e22e021c12920a5ee5759a10c",
+  "name": "Prince M",
+  "username": "prince_updated"
+
+}
+
+
+###
+
+
+POST http://localhost:9090/update_profile_data
+Content-Type: application/json
+
+{
+  "token": "b5579af5a3062385379b7307f8d1540db3ead24e22e021c12920a5ee5759a10c",
+  "bio": "I am a full stack developer",
+  "currentPost": "CTO",
+  "pastwork": [
+    {
+      "company": "Microsoft",
+      "position": "CTO",
+      "years": "2"
+    }
+  ],
+
+  "education":[
+    {
+      "school": "bbdniit",
+      "degree": "B.Tech",
+      "fieldOfStudy": " 2024-2028"
+    }
+  ]
+}
+
+
+###
+
+GET http://localhost:9090/user/get_all_users
+
